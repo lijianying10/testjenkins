@@ -12,8 +12,6 @@ pipeline {
         stage('Filter Condition 2') {
           steps {
             echo '2'
-            sh '''echo kk
-exit 1'''
           }
         }
 
@@ -23,6 +21,7 @@ exit 1'''
     stage('Filter Condition 3') {
       steps {
         echo '3'
+        sh 'exit 1'
       }
     }
 
